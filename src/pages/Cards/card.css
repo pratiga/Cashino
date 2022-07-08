@@ -1,0 +1,58 @@
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height: 100px;
+  background: white;
+  color: black;
+}
+.cards .left,
+.cards .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards .left .title,
+.cards .right .title {
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(160, 160, 160);
+}
+.cards .left .counter,
+.cards .right .counter {
+  font-size: 28px;
+  font-weight: 300;
+}
+.cards .left .link,
+.cards .right .link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 12px;
+  border-bottom: 1px solid gray;
+}
+.cards .left .percentage,
+.cards .right .percentage {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.cards .left .percentage.positive,
+.cards .right .percentage.positive {
+  color: green;
+}
+.cards .left .percentage.negative,
+.cards .right .percentage.negative {
+  color: red;
+}
+.cards .left .icon,
+.cards .right .icon {
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  align-self: flex-end;
+}/*# sourceMappingURL=card.css.map */
