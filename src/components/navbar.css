@@ -1,0 +1,68 @@
+nav{
+   display: block;
+    position: fixed;
+    width: 1300px;
+    height: 3rem;
+}
+  .navbar-container{
+    position: fixed;
+    width: 100%;
+   display: flex;
+   gap: 1rem;
+   justify-content: end;
+    padding-top: 0.5rem;
+    height: 2.5rem;
+    box-shadow: 1px 1px 2px 2px rgb(231, 218, 218);
+}
+.navbar-dark{
+    color: white;
+}
+.navbar-light{
+    color: black;
+}
+.bg-dark{
+    background-color: black;
+}
+.bg-light{
+    background: white;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(187, 179, 179);
+    border-radius: 40%;
+    
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 40%;
+}
+input:checked + .slider{
+    background-color: #2480f0;
+}
+input:checked + .slider:before{
+    transform: translate(26px);   
+}
+
