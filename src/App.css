@@ -10,24 +10,28 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   --activeItem: #9f9596f0;
 }
+.body{
+ 
+}
 .App{
-  background: linear-gradient(
+  /* background: linear-gradient(
     106.37deg,
     #ece3d9 17.63%,
     #d6b8b8 51.55%,
     #d8d5d8 90.85%
-  );
-  height: 100vh;
+  ); */
+  
   display:flex;
   font-family: 'Inter', sans-serif;
-  position: sticky;
+  min-height: 90vh;
+ 
 }
 
 main{
   width: 100%;
   padding: 20px;
 }
-@media screen and (max-wdith: 1200px){
+@media screen and (max-width: 1200px){
   .AppGlass{
     grid-template-columns: 10% 50% auto;
     /* overflow-y: scroll; */
