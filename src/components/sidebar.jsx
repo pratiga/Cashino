@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
  import Logo from '../imgs/logo.png'
 import  './sidebar.css';
-import {UilSignOutAlt} from '@iconscout/react-unicons';
+// import {UilSignOutAlt} from '@iconscout/react-unicons';
 import { NavLink } from 'react-router-dom';
-// import {FaBars} from 'react-icons/fa'
+import { toggleMode } from '../App'
 
 import {
   UilEstate,
@@ -17,8 +17,10 @@ import {
 
 
 const Sidebar = ({children}) => {
+  // const { dispatch } = useContext(DarkModeContext);
     const [selected, setselected] = useState(0)
-    const [expanded, setExpanded] = useState(true);
+    const [mode, setMode] = useState('light');
+     const [expanded, setExpanded] = useState(true);
 
 
  const menuItem = [
@@ -60,14 +62,21 @@ const Sidebar = ({children}) => {
   
   
 ];
-
+const style = {
+  textDecoration: 'none',
+  textDecorationStyle: 'none',
+  textDecorationLine: 'none',
+  fontStyle: 'none',
+};
 
 return (
-    <>
-    <div className="Sidebar"
+    <>  
+    
+   
+    <div className={`Sidebar sidebar-${mode} bg-${mode}`}
     animate= {window.innerWidth<=768? `${expanded}`: ''}
      >
-     <div className="container">
+     <div className="sidebar-container">
     
     {/* logo */}
     
@@ -84,22 +93,39 @@ return (
       {
           menuItem.map((item, index)=> (
         
-          <NavLink to={item.path} className={selected===index?'menuItem active': 'menuItem'}
+          <NavLink  to={item.path} className={selected===index?'menuItem active': 'menuItem'}
           key={index}
           onClick={()=> setselected(index)}
+           style={style}
           >
             <span><item.icon/></span>
-            <span> {item.heading}</span>
+            <div className='head'> {item.heading}</div>
           </NavLink>
         )
       )}
-      <div className='menuItem'>
+      {/* <div className='menuItem'>
         <UilSignOutAlt/>
+      </div> */}
+        <div className="bottom">
+        Theme
+        <div
+          className="colorOption"
+          onClick={() => setMode('light')}
+        ></div>
+        <div
+          className="colorOption"
+          onClick={() => setMode('dark')}
+        ></div>
       </div>
+      
+      
+      
     </div>
     </div>
     </div> 
-    <main>{children}</main>
+    <main className={`main sidebar-${mode} bg-${mode}`}>
+    {children}
+    </main>
     </>
     
     
