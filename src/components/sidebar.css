@@ -1,20 +1,29 @@
+
 .Sidebar{
     display:grid;
-    grid-template-columns: 13rem ;
+    grid-template-columns: 15rem ;
     position: relative;
     padding-top: 4rem;
     transition: all 300ms ease;
-  
-
+    box-shadow: 2px 3px 3px 2px whitesmoke;
+    /* background: linear-gradient(
+        106.37deg,
+        #3f3a3f 17.63%,
+        #5f5a5a 51.55%,
+        #2c383d 90.85%
+      ); */
     
 }
 .bars{
     display: none !important;
     
 }
-.container{
+.sidebar-container{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    height: 44rem;
+    
 }
 NavLink{
     font-style: none;
@@ -46,27 +55,28 @@ NavLink{
   .menuItem{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
     height: 2.5rem;
     margin-left: 2rem;
     position: relative;
     transition: all 300ms ease ;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     border-radius: 0.7rem;
+     color: rgb(106, 155, 245); 
     
 }
   .menuItem:hover{
       cursor:pointer;
   }
-  .menuItem>span{
-    color: black;
-    
-
+   NavLink{
+      text-decoration: none;
   }
+  
   .active{
-      background: var(--activeItem);
+      background: rgb(90, 81, 81);
       margin-left: 0;
+      
   }
   .active::before{
       content: '';
@@ -81,6 +91,46 @@ NavLink{
       bottom: 1rem;
       width: 100%;
   }
+  .main{
+      margin-top:1rem;
+  }
+  .sidebar-dark{
+    color: white;
+}
+.sidebar-light{
+    color: black;
+}
+.bg-dark{
+    background-color: black;
+}
+.bg-light{
+    background: white;
+}
+
+
+.bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  .bottom .colorOption {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #7451f8;
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+  .bottom .colorOption:nth-child(1) {
+    background-color: whitesmoke;
+  }
+  .bottom .colorOption:nth-child(2) {
+    background-color: #333;
+  }
+  .bottom .colorOption:nth-child(3) {
+    background-color: darkblue;
+  }/*# sourceMappingURL=chart.css.map */
   @media screen and (max-width: 1200px){
       .menuItem>span{
           display: none;
