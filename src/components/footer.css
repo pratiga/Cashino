@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    color: azure;
+    width: 100%;
+   
+}
+ .footer .footer-content{
+  
+   
+    width: 100%;
+    color: rgb(61, 173, 173);
+    text-align: end;
+}
+.footer-dark{
+    color: white;
+}
+.footer-light{
+    color: black;
+}
+.bg-dark{
+    background-color: black;
+}
+.bg-light{
+    background: white;
+}
