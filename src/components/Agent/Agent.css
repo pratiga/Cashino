@@ -1,0 +1,102 @@
+.agent-table{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 3px 2px 1px 2px rgb(96, 82, 82);
+}
+.agent-title{
+ display: flex;
+ gap: 1rem;
+  color:rgb(106, 155, 245);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.agent-table button{
+  background-color:rgb(106, 155, 245) ;
+  padding: 10px;
+  border-radius: 20%;
+  cursor: pointer;
+  border: none;
+}
+.AgentLists{
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.agents{
+  width: 100%;
+  /* background:white; */
+  border-radius: 0.7rem;
+  padding: 1rem;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  font-size: 13px; 
+
+}
+.agent{
+  display: flex;
+  gap: 1rem;
+  box-shadow: 10px 2px 4px 5px rgb(155, 149, 149); 
+  padding: 1rem;
+  width: 60%;
+}
+.agent>img{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  
+}
+.not1{
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 16px;
+}
+.not1:hover{
+  cursor: pointer;
+  color: rgb(129, 123, 123);
+}
+.agent-dark{
+  color: white;
+}
+.agent-light{
+  color: black;
+}
+.bg-dark{
+  background-color: black;
+}
+.bg-light{
+  background: white;
+}
+
+@media screen and (max-width:1000px) and (min-width:800px){
+  .agents{
+   
+    display: grid;
+  grid-template-columns: repeat(1,100%); 
+}
+}
+@media screen and (max-width:1200px) and (min-width:1000px){
+  .list{
+    display: none;
+  }
+}
+
+@media screen and (max-width:800px) and (min-width:400px){
+  .agents{
+    /* display: flex;
+    flex-direction: column; */
+    display: none;
+  }
+   .agent>img{
+    width: 3.2rem;
+    height: 3.2rem;
+  } 
+   
+}
+  
