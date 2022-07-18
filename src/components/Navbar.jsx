@@ -10,8 +10,7 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import Brightness5Icon from '@mui/icons-material/Brightness5';
 import Brightness2Icon from '@mui/icons-material/Brightness2';
 const navbar = (props) => {
- 
- 
+
   return (
      
     <nav>
