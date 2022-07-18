@@ -1,0 +1,44 @@
+.transition{
+    padding: 2rem;
+}
+.Account,
+.date,
+.transation,
+.cheque,
+.value,
+.withdraw,
+.deposite,
+.balance
+{
+    border-left:1px solid rgb(226, 226, 235);
+    border-bottom:1px solid rgb(206, 206, 222);
+    padding: 0.6rem;
+}
+table{
+    border-right:1px solid rgb(211, 211, 226);
+    border-top:1px solid rgb(218, 218, 229);
+}
+th{
+    color: rgb(106, 155, 245);
+    font-size: 18px;
+    letter-spacing: 1px;
+   
+}
+ /* .trans-table th{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;  
+} */
+.cash-dark{
+    color: white;
+  }
+  .cash-light{
+    color: black;
+  }
+  .bg-dark{
+    background-color: black;
+  }
+  .bg-light{
+    background: white;
+  }
+
