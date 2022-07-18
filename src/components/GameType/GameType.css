@@ -1,0 +1,80 @@
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin: 10px 10px 5px 0px;
+    padding: 10px;
+    /* box-shadow: 5px 3px 8px 20px rgb(209, 215, 192); */
+    /* background: white; */
+   
+}
+/* .row:hover{
+  
+    row-gap: 1rem;
+    column-gap: 0;
+} */
+.artical{
+    display: block;
+     width: 100%;
+    padding: 5px 10px 0 10px;
+    margin: 5px 10px 5px 0;
+    box-shadow: 5px 3px 8px 2px rgb(209, 215, 192);
+}
+.artical:hover{
+   cursor: pointer;
+   box-shadow: 0px 5px 20px 0 rgb(219, 183, 183); 
+    
+}
+ 
+.cryptoid{
+    display: flex;
+    justify-content: space-between;
+    /* background: rgb(230, 223, 230); */
+    padding: 5px;
+    font-size: 16px;
+    height: 3.5rem;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 10px 5px rgb(209, 215, 192);
+}
+/* .cryptoid:hover{
+    cursor: pointer;
+    border-radius: 5%;
+   box-shadow: 0 5px 5px 0 rgb(126, 90, 90);
+   padding: 0;
+   margin: 0;
+} */
+.cryptoid h1{
+    font-size: 16px;
+}
+.box{
+    display: block;
+    padding: 5px;
+    border-bottom-left-radius: 10px solid rgb(127, 125, 114);
+    height: 10rem;
+}
+.cryptoid img{
+    width: 50px;
+    height: 50px;
+}
+.table-dark{
+    color: white;
+ }
+ .table-light{
+    color: black;
+ }
+ .bg-dark{
+    background-color: black;
+ }
+ .bg-light{
+    background: white;
+ }
+@media screen and (min-width: 480px) and (max-width:1100){
+    .row{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        
+    }
+}
+
