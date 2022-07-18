@@ -1,12 +1,18 @@
 .dashboard{
-   margin: 5px;
+   margin-top: 20px;
    display: flex;
    flex-direction: column;
+   gap: 2rem;
 }
 .heading{
-   font-size: 20px;
+   font-size: 30px;
    font-weight: 800px;
    padding: 20px;
+   color: rgb(106, 155, 245);
+   letter-spacing: 1px;
+   display: flex;
+   gap: 1rem;
+   
    
 }
 .widget{
@@ -14,7 +20,19 @@
    grid-template-columns: repeat(4,24%);
    gap: 1rem;
 }
-.featured{
+.feature{
    display: grid;
-   grid-template-columns: repeat(2,50%);
+   grid-template-columns: 60% 40%;
+}
+.dashboard-dark{
+   color: white;
+}
+.dashboard-light{
+   color: black;
+}
+.bg-dark{
+   background-color: black;
+}
+.bg-light{
+   background: white;
 }
