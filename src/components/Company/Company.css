@@ -1,0 +1,86 @@
+.company{
+   width: 100%;  
+   margin-top: 10px;
+}
+.company-container{
+    /* border: 2px solid rgb(234, 227, 227); */
+    /* box-shadow:2px 2px 2px 2px rgb(239, 217, 217); */
+    display:grid;
+    grid-template-columns: 75% 25%;
+    padding-top: 10px;
+}
+.company-container{
+  
+    padding: 1rem;
+}
+.company-article{
+    box-shadow: 2px 0px 2px 2px rgb(158, 148, 148);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    }
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: -0.1rem;
+    
+}
+.content h1{
+    font-size: 18px;
+}
+ .industry,
+  .employees,
+   .location{
+    display: flex;
+   gap: 20rem;
+   font-weight: 600;
+   text-transform: capitalize;
+   letter-spacing: 1px;
+   word-spacing: 2px;
+}
+   .employees{
+       gap: 12.5rem;
+   }
+
+ 
+.title{
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(106, 155, 245);
+    letter-spacing: 2px;
+}
+.details{
+    text-indent: 0%;
+    letter-spacing: 0.7px;
+    word-spacing: 1.6px ;
+    font-size: 19px;
+}
+.company-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 20px;
+    color: rgb(106, 155, 245);
+    box-shadow:2px 0px 2px 2px rgb(158, 148, 148) ;
+}
+.company-bottom h4{
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+    font-weight: 800;
+    text-align: center;
+}
+.agent-dark{
+    color: white;
+  }
+  .agent-light{
+    color: black;
+  }
+  .bg-dark{
+    background-color: black;
+  }
+  .bg-light{
+    background: white;
+  }
