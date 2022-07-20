@@ -31,9 +31,9 @@ const cards = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "Agent",
         isMoney: false,
-        link: "View all orders",
+        link: "View list of Agent",
         icon: (
           <ShoppingCartOutlinedIcon
             className="icon"
