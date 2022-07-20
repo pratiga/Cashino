@@ -12,3 +12,7 @@
 ![customer](https://user-images.githubusercontent.com/97714023/180041159-d42b70f6-cc63-44b0-a04a-af7f3509f10f.png)
 ![company](https://user-images.githubusercontent.com/97714023/180041185-e853ff50-1a2b-4918-91d4-b9cce1c86a37.png)
 ![company](https://user-images.githubusercontent.com/97714023/180041195-dde28626-b874-4cf2-a791-60ad1b9669d4.png)
+
+
+![game](https://user-images.githubusercontent.com/97714023/180041519-2efcebea-8b30-44e8-b63e-53b8932e416d.png)
+![game](https://user-images.githubusercontent.com/97714023/180041532-e28cd00b-0fa1-4103-bfdd-2ec9c07bb5f1.png)
