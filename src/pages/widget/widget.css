@@ -8,6 +8,8 @@
 .widgetLgTitle {
   font-size: 22px;
   font-weight: 600;
+  color: rgb(106, 155, 245);
+  letter-spacing: 1px;
 }
 
 .widgetLgTable{
