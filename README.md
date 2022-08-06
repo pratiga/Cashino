@@ -1,4 +1,5 @@
 #Dashboard of Casino build by reactJs.
+Designed a cashino dashboard that monitors the agent and client , stores the list of companies which are linked to cashino and also allows clients to play different types of games.  It is targeted to multinational company.it will show the data from the public API it is using HTML5,CSS3,JAVASCRIPT,REACT .
 ![dashboard](https://user-images.githubusercontent.com/97714023/180036992-bc4e588b-c63f-4213-9f60-7c874110eb36.png)
 
 ![dashboard](https://user-images.githubusercontent.com/97714023/180037174-fe160f7b-28cf-4e67-9abf-2c6c66afccd7.png)
